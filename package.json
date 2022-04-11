@@ -3,17 +3,33 @@
   "version": "1.0.0",
   "description": "Library template",
   "main": "./dist/index.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prettier": "prettier '**/*.{js,ts}' --ignore-path ./.prettierignore",
     "types": "tsc --noEmit",
-    "lint": "eslint '*/**/*.{js,ts}'"
+    "lint": "eslint '*/**/*.{js,ts}'",
+    "build": "npm run build:clean && npm run build:lib",
+    "build:clean": "rimraf dist",
+    "build:lib": "rollup -c"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/goel4ever/template-nodejs.git"
   },
-  "author": "",
+  "browserslist": [
+    "last 2 version "
+  ],
+  "author": "Anshul Goel <dec.anshul@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "template",
+    "javascript",
+    "package"
+  ],
   "bugs": {
     "url": "https://github.com/goel4ever/template-nodejs/issues"
   },
@@ -22,12 +38,18 @@
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^21.0.3",
+    "@rollup/plugin-node-resolve": "^13.2.0",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jsdoc": "^39.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.6.2",
+    "rollup": "^2.70.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.2",
     "typescript": "^4.6.3"
   }
 }
