@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/goel4ever/template-nodejs#readme",
   "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
