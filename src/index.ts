@@ -1,5 +1,5 @@
-const log = (a: string): string => {
-    return a;
+const log = (s: string): string => {
+    return s;
 };
 
 console.log(log('test'));
