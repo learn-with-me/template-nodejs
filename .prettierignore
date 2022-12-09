@@ -1,4 +1,6 @@
 .github/
+.husky/
 .idea/
 node_modules/
 dist/
+*.md

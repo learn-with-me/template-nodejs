@@ -1,5 +1,5 @@
 const log = (s: string): string => {
-    return s;
+  return s;
 };
 
 console.log(log('test'));
