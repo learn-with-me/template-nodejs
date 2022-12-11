@@ -1,10 +1,25 @@
-# Nodejs Template
+# Nodejs API Template
 
-The template comes with a few preset features that I may be using in future projects
+This ready-to-use express-based API template comes with a few preset features that will be used in future projects.
 
 ## Features
 
-1. Commit hooks and automation via [husky](https://www.npmjs.com/package/husky)
+1. Commit hooks automation configured using [husky](https://www.npmjs.com/package/husky)
 2. Code formatter via [prettier](https://www.npmjs.com/package/prettier)
-3. Lint using [eslint](https://www.npmjs.com/package/eslint)
-4. GitHub workflow configured to check pull requests
+3. Code linter using [eslint](https://www.npmjs.com/package/eslint)
+4. Bundle generation via [Rollup](https://npm.im/rollup)
+5. GitHub workflow configured to check successful builds
+
+## How to use the template
+
+Easiest way is to click on the green "Use this template" button from [here](https://github.com/learn-with-me/nodejs-api-template). This will prompt your to create a new repository at a desired location. All you'll have to do is start adding features.
+
+## Upcoming features
+
+- [ ] Example endpoints API
+- [ ] Unit testing support
+- [ ] jsDoc support
+- [ ] Swagger documentation
+- [ ] ORM support
+- [ ] Template versioning
+- [ ] Changelog
