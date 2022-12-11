@@ -1,8 +1,8 @@
-name: Pull Requests Check
+name: Push to Main Check
 
 on:
-  pull_request:
-    branches:
+  push:
+    branches: 
       - main
 
 jobs:

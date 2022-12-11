@@ -20,11 +20,6 @@ export default {
       format: 'es',
     },
   ],
-  plugins: [
-    commonjs(),
-    resolve(),
-    terser(),
-    typescript(),
-  ],
+  plugins: [commonjs(), resolve(), terser(), typescript()],
   external: ['ms'],
 };
