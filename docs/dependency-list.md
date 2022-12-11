@@ -10,14 +10,12 @@ Listing out dependencies to have a quick link handy for checking latest version 
 
 ## Dev Dependencies
 
-- [@babel/core](https://npm.im/@babel/core)
-- [@babel/preset-env](https://npm.im/@babel/preset-env)
-- [@babel/preset-typescript](https://npm.im/@babel/preset-typescript)
 - [@commitlint/cli](https://npm.im/@commitlint/cli)
 - [@commitlint/config-conventional](https://npm.im/@commitlint/config-conventional)
-- [@rollup/plugin-babel](https://npm.im/@rollup/plugin-babel)
 - [@rollup/plugin-commonjs](https://npm.im/@rollup/plugin-commonjs)
 - [@rollup/plugin-node-resolve](https://npm.im/@rollup/plugin-node-resolve)
+- [@rollup/plugin-terser](https://npm.im/@rollup/plugin-terser)
+- [@rollup/plugin-typescript](https://npm.im/@rollup/plugin-typescript)
 - [@typescript-eslint/eslint-plugin](https://npm.im/@typescript-eslint/eslint-plugin)
 - [@typescript-eslint/parser](https://npm.im/@typescript-eslint/parser)
 - [eslint](https://npm.im/eslint)
@@ -28,13 +26,4 @@ Listing out dependencies to have a quick link handy for checking latest version 
 - [lint-staged](https://npm.im/lint-staged)
 - [prettier](https://npm.im/prettier)
 - [rollup](https://npm.im/rollup)
-- [rollup-plugin-terser](https://npm.im/rollup-plugin-terser)
-- [rollup-plugin-typescript2](https://npm.im/rollup-plugin-typescript2)
 - [typescript](https://npm.im/typescript)
-- [](https://npm.im/)
-
-## TODO
-
-- Switch to [rollup plugins](https://github.com/rollup/plugins)
-- Merge plugins from [here](https://github.com/code-hour/nodejs-template/blob/master/package.json)
-- 

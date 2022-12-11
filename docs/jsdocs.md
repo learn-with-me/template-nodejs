@@ -6,6 +6,11 @@ Yet to be added using either [docdash](https://github.com/clenemt/docdash) templ
 
 Finally we'll [integrate](https://github.com/andstor/jsdoc-action) it with GitHub action, to push the changes out automatically.
 
+## Dependencies used
+
+- jsdoc
+- eslint-plugin-jsdoc
+
 ## References
 
 - GitHub [jsDoc](https://github.com/jsdoc/jsdoc)

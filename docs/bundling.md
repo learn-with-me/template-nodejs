@@ -8,13 +8,13 @@ Can be found in `rollup.config.js`.
 
 ## Dependencies used
 
-- @rollup/plugin-babel
 - @rollup/plugin-commonjs
 - @rollup/plugin-node-resolve
+- @rollup/plugin-terser
+- @rollup/plugin-typescript
 - rollup
-- rollup-plugin-terser
-- rollup-plugin-typescript2
 
 ## References
 
 - npmjs [rollup](https://www.npmjs.com/package/rollup)
+- Rollup [plugins](https://github.com/rollup/plugins)

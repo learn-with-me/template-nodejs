@@ -3,3 +3,5 @@ const log = (s: string): string => {
 };
 
 console.log(log('test'));
+
+module.exports = log

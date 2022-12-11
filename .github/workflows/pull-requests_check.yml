@@ -1,15 +1,37 @@
 name: Pull-Requests Check
 
-on: [pull_request]
+on:
+  pull_request:
+    branches: 
+      - main
+  push:
+    branches: 
+      - main
 
 jobs:
-  Test:
+  release:
+    name: Build and release
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
       with:
-        node-version: 12
+        node-version: 16
+    - name: Install dependencies
+      run: npm i
+    - name: Release package
+      run: npm run finish
+      env: 
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
 
     - name: Finish
       env:

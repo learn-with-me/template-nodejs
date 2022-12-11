@@ -53,4 +53,6 @@ TBD
 
 ## TODO
 
-Explore [lint-staged](https://www.npmjs.com/package/lint-staged) as well
+- Merge plugins from [here](https://github.com/code-hour/nodejs-template/blob/master/package.json)
+- Explore [lint-staged](https://www.npmjs.com/package/lint-staged) as well.
+- Split the template into `library-template` and `api-template`.
