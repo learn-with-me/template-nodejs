@@ -53,6 +53,7 @@ TBD
 
 ## TODO
 
+- https://github.com/code-hour/nodejs-template
 - Fix module related issue and understand imports better
   - [allowSyntheticDefaultImports](https://www.typescriptlang.org/tsconfig#allowSyntheticDefaultImports)
 - Merge plugins from [here](https://github.com/code-hour/nodejs-template/blob/master/package.json)

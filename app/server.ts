@@ -11,6 +11,8 @@ dotenv.config();
 
 // Default node environment if the environment variable is missing
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+// import logger from './lib/logger';
+// import requestLogger from './lib/logger/request-logger';
 
 const app: Express = express();
 
@@ -25,12 +27,18 @@ app.use(cors());
 // Add response time in headers
 // app.use(responseTime());
 
+// Logs
+// app.use(requestLogger);
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', (req: Request, res: Response) => {
   res.status(200).send('Application Started!').end();
 });
+
+import routes from './routes';
+routes(app);
 
 // catch 404 and forward to error handler
 app.use((req: Request, res: Response) => {
@@ -48,5 +56,6 @@ app.use((req: Request, res: Response) => {
 
 const PORT = process.env.PORT || 7001;
 app.listen(PORT, () => {
+  // logger.info(`We are live on ${PORT}`);
   console.log(`⚡️[server]: Server is running at https://localhost:${PORT}`);
 });
