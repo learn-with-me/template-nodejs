@@ -6,6 +6,12 @@ Listing out dependencies to have a quick link handy for checking latest version 
 
 ## Dependencies
 
+- [body-parser](https://npm.im/body-parser)
+- [cors](https://npm.im/cors)
+- [dotenv](https://npm.im/dotenv)
+- [express](https://npm.im/express)
+- [helmet](https://npm.im/helmet)
+- [response-time](https://npm.im/response-time)
 - [](https://npm.im/)
 
 ## Dev Dependencies

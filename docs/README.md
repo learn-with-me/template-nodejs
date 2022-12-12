@@ -53,7 +53,17 @@ TBD
 
 ## TODO
 
+- Fix module related issue and understand imports better
+  - [allowSyntheticDefaultImports](https://www.typescriptlang.org/tsconfig#allowSyntheticDefaultImports)
 - Merge plugins from [here](https://github.com/code-hour/nodejs-template/blob/master/package.json)
 - Explore [lint-staged](https://www.npmjs.com/package/lint-staged) as well.
 - Split the template into `library-template` and `api-template`.
 - Module `type` in `package.json` yet to be sorted between ESM and CJS.
+- https://lp.logrocket.com/blg/typescript-signup
+
+## To Read
+
+- https://blog.logrocket.com/how-to-set-up-node-typescript-express/
+- https://www.typescriptlang.org/docs/handbook/modules.html
+- `@types` declaration packages provide type definitions in the form of declaration files. Declaration files are predefined modules that describe the shape of JavaScript values, or the types present, for the TypeScript compiler. Type declarations are usually contained in files with a `.d.ts` extension. These declaration files are available for all libraries that were originally written in JavaScript, not TypeScript.
+- 

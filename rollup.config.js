@@ -1,4 +1,5 @@
 import commonjs from '@rollup/plugin-commonjs';
+import json from '@rollup/plugin-json';
 import resolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
 import typescript from '@rollup/plugin-typescript';
@@ -8,7 +9,7 @@ import pkg from './package.json';
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 export default {
-  input: 'src/index.ts',
+  input: 'app/server.ts',
   output: [
     {
       file: pkg.main,
@@ -20,6 +21,6 @@ export default {
       format: 'es',
     },
   ],
-  plugins: [commonjs(), resolve(), terser(), typescript()],
+  plugins: [commonjs(), json(), resolve(), terser(), typescript()],
   external: ['ms'],
 };

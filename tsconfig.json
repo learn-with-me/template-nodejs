@@ -10,15 +10,16 @@
             "es2017",
             "dom"
         ],
+        "allowSyntheticDefaultImports": true,
         "sourceMap": true,
         "moduleResolution": "node",
-        "baseUrl": "src",
+        "baseUrl": "app",
         "skipLibCheck": true,
         "strict": true,
         "declaration": true
     },
     "include": [
-        "src",
+        "app",
         "typeScript"
     ],
     "exclude": [

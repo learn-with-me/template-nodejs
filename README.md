@@ -1,5 +1,7 @@
 # Nodejs API Template
 
+> Note: This template is in progress right now. Version `1.0.0` will be released soon.
+
 This ready-to-use express-based API template comes with a few preset features that will be used in future projects.
 
 ## Features
@@ -16,6 +18,7 @@ Easiest way is to click on the green "Use this template" button from [here](http
 
 ## Upcoming features
 
+- [ ] Local development using `concurrently`, `nodemon` and a watcher
 - [ ] Example endpoints API
 - [ ] Unit testing support
 - [ ] jsDoc support
