@@ -32,10 +32,6 @@ For more information, read about [code quality](./code-quality.md)
 
 Commit messages are enfored to follow [this](https://www.conventionalcommits.org/en/v1.0.0/) convention. The format will be helpful in reading changelog.
 
-## Bundling
-
-Refer [here](./bundling.md)
-
 ## More References
 
 - [Documentation](./documentation.md)

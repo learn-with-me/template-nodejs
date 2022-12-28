@@ -18,10 +18,6 @@ Listing out dependencies to have a quick link handy for checking latest version 
 
 - [@commitlint/cli](https://npm.im/@commitlint/cli)
 - [@commitlint/config-conventional](https://npm.im/@commitlint/config-conventional)
-- [@rollup/plugin-commonjs](https://npm.im/@rollup/plugin-commonjs)
-- [@rollup/plugin-node-resolve](https://npm.im/@rollup/plugin-node-resolve)
-- [@rollup/plugin-terser](https://npm.im/@rollup/plugin-terser)
-- [@rollup/plugin-typescript](https://npm.im/@rollup/plugin-typescript)
 - [@typescript-eslint/eslint-plugin](https://npm.im/@typescript-eslint/eslint-plugin)
 - [@typescript-eslint/parser](https://npm.im/@typescript-eslint/parser)
 - [eslint](https://npm.im/eslint)
@@ -31,5 +27,4 @@ Listing out dependencies to have a quick link handy for checking latest version 
 - [husky](https://npm.im/husky)
 - [lint-staged](https://npm.im/lint-staged)
 - [prettier](https://npm.im/prettier)
-- [rollup](https://npm.im/rollup)
 - [typescript](https://npm.im/typescript)

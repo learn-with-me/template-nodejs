@@ -1,6 +1,6 @@
 import {Express} from 'express';
 
-import TestRoute from './temp-route';
+import TestRoute from './temp-route.js';
 
 const API_VERSION = process.env.API_VERSION || '/v0';
 

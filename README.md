@@ -9,8 +9,7 @@ This ready-to-use express-based API template comes with a few preset features th
 1. Commit hooks automation configured using [husky](https://www.npmjs.com/package/husky)
 2. Code formatter via [prettier](https://www.npmjs.com/package/prettier)
 3. Code linter using [eslint](https://www.npmjs.com/package/eslint)
-4. Bundle generation via [Rollup](https://npm.im/rollup)
-5. GitHub workflow configured to check successful builds
+4. GitHub workflow configured to check successful builds
 
 ## How to use the template
 
@@ -37,7 +36,6 @@ All documentation is done in Swagger. JSON file can be easily edited at https://
 
 ## Upcoming features
 
-- [ ] Get rid of `rollup` bundling since not need in server
 - [ ] Local development using `concurrently`, `nodemon` and a watcher
 - [ ] Example endpoints API
 - [ ] Unit testing support
