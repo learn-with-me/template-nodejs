@@ -37,7 +37,7 @@ app.get('/', (req: Request, res: Response) => {
   res.status(200).send('Application Started!').end();
 });
 
-import routes from './routes/index.js';
+import routes from './routes/index';
 routes(app);
 
 // catch 404 and forward to error handler
