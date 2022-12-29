@@ -1,9 +1,9 @@
 import express from 'express';
-import {Express, NextFunction, Request, Response} from 'express';
+import {Express, Request, Response} from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-// import responseTime from "response-time";
+import {logger} from './lib/logger';
 
 import dotenv from 'dotenv';
 
@@ -11,8 +11,8 @@ dotenv.config();
 
 // Default node environment if the environment variable is missing
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-// import logger from './lib/logger';
-// import requestLogger from './lib/logger/request-logger';
+// import logger from './lib/logger'
+// import requestLogger from './lib/logger/request-logger'
 
 const app: Express = express();
 
@@ -24,11 +24,14 @@ app.use(helmet.referrerPolicy({policy: 'same-origin'}));
 // Enable All CORS Requests
 app.use(cors());
 
+// Attach a unique request ID to every log line
+// app.use(contextMiddleware)
+
 // Add response time in headers
-// app.use(responseTime());
+// app.use(responseTime())
 
 // Logs
-// app.use(requestLogger);
+// app.use(requestLogger)
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -50,12 +53,12 @@ app.use((req: Request, res: Response) => {
 });
 
 // app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-//   res.status(err.status || 500).send(err);
-//   next(err);
-// });
+//   res.status(err.status || 500).send(err)
+//   next(err)
+// })
 
 const PORT = process.env.PORT || 7001;
 app.listen(PORT, () => {
-  // logger.info(`We are live on ${PORT}`);
-  console.log(`⚡️[server]: Server is running at https://localhost:${PORT}`);
+  // logger.info(`We are live on ${PORT}`)
+  logger.debug(`⚡️[server]: Server is running at https://localhost:${PORT}`);
 });
